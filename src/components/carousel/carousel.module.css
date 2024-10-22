@@ -1,0 +1,32 @@
+.image{
+    width: 100%;
+    height: auto;
+    width:  100%;
+    height: 200px;
+    object-fit: cover;
+    transition: .5s ease all;
+}
+.prev{
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(185, 40, 40);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 10px  0px  0px 10px;
+}
+.prev:hover{
+    background-color: rgb(144, 19, 19);
+}
+.next{
+    padding: 5px;
+    border: none;
+    color: white;
+    background-color: rgb(70, 121, 18);
+    cursor: pointer;
+    transition: all 0.3s linear;
+    border-radius: 0px  10px  10px 0px;
+}
+.next:hover{
+    background-color: rgb(47, 83, 11);
+}

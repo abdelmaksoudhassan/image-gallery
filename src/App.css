@@ -1,0 +1,71 @@
+body{
+  margin: 0px;
+}
+.header{
+  font-size: 25px;
+  color: #6e7f80;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transition: all 0.3s linear;
+}
+.header:hover{
+  color: #ff6f69  ;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  text-decoration: none;
+}
+.button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Raleway', sans-serif;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  background-color: #ff6f69;
+  color: white;
+}
+.button:hover{
+  cursor: pointer;
+  background-color: #fd8580;
+  transition: all 0.3s linear;
+}
+.template{
+  background-image: url('./assets/education.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+/*  */
+.grid-container{
+  display: grid;
+  gap: 1rem;
+}
+/*  */
+.footer{
+  color: white;
+  background-color: #61705f;
+  padding: 10px 0px;
+}
+@media (max-width: 500px) {
+  .container{
+    margin: auto 10px;
+  }
+}
+
+@media (min-width: 500px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+  .container{
+    margin: auto 50px;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container { grid-template-columns: repeat(3, 1fr); }
+  .container{
+    margin: auto 100px;
+  }
+}
